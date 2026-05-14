@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls \"c:/Users/Артем/Documents/ITMO-TAU-ACT/TAU-ACT\\(6th sem\\)/lab1/images/\")",
+      "Read(//c/Users/Артем/Documents/ITMO-TAU-ACT/TAU-ACT\\(6th sem\\)/**)",
+      "Bash(python solve_lab.py)",
+      "Bash(ls -la \"c:/Users/Артем/Documents/ITMO-TAU-ACT/TAU-ACT\\(6th sem\\)/lab1/images/\")"
+    ]
+  }
+}

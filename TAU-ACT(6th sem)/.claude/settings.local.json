@@ -1,0 +1,39 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -la \"c:/Users/Артем/Documents/ITMO-TAU-ACT/TAU-ACT\\(6th sem\\)/lab2/\")",
+      "Bash(ls -la \"c:/Users/Артем/Documents/ITMO-TAU-ACT/TAU-ACT\\(6th sem\\)/lab1/\")",
+      "Bash(python scripts/solve_lab2.py)",
+      "Bash(python -u scripts/solve_lab2.py)",
+      "Bash(ls -la \"c:/Users/Артем/Documents/ITMO-TAU-ACT/TAU-ACT\\(6th sem\\)/lab2/images/\")",
+      "Bash(typst compile:*)",
+      "Bash(where typst:*)",
+      "Read(//c/Users/Артем/.cargo/bin/**)",
+      "Read(//c/Users/Артем/AppData/Local/Programs/**)",
+      "Read(//c/Program Files/**)",
+      "Bash(ls /c/Users/Артем/.cargo/bin/typst*)",
+      "Bash(ls \"c:/Users/Артем/Documents/ITMO-TAU-ACT/TAU-ACT\\(6th sem\\)/lab2/images/\")",
+      "Bash(ls \"c:/Users/Артем/Documents/ITMO-TAU-ACT/TAU-ACT\\(6th sem\\)/lab1/\")",
+      "Bash(python solve_lab.py)",
+      "Bash(python -c \":*)",
+      "Bash(timeout 30 python -c \":*)",
+      "Bash(timeout 60 python -c \":*)",
+      "Bash(ls -la \"c:/Users/Артем/Documents/ITMO-TAU-ACT/TAU-ACT\\(6th sem\\)/lab3/scripts/\")",
+      "Bash(python scripts/lab3_task1.py)",
+      "Bash(python scripts/lab3_task2.py)",
+      "Bash(python -c \"import cvxpy; print\\(cvxpy.installed_solvers\\(\\)\\)\")",
+      "Bash(python lab3_task1.py)",
+      "Bash(python lab3_task2.py)",
+      "Bash(python lab3_task3.py)",
+      "Bash(ls \"c:/Users/Артем/Documents/ITMO-TAU-ACT/TAU-ACT\\(6th sem\\)/lab3/\")",
+      "Bash(ls \"c:/Users/Артем/Documents/ITMO-TAU-ACT/TAU-ACT\\(6th sem\\)/lab3/images/\")",
+      "Bash(python scripts/lab3_task3.py)",
+      "Bash(python -c \"import numpy, scipy, control, matplotlib; print\\('OK', numpy.__version__, scipy.__version__\\)\")",
+      "Bash(python scripts/lab4_task1.py)",
+      "Bash(set PYTHONIOENCODING=utf-8)",
+      "PowerShell($env:PYTHONIOENCODING=\"utf-8\"; python \"scripts/lab4_task1.py\" 2>&1 | Select-Object -Last 80)",
+      "PowerShell($env:PYTHONIOENCODING=\"utf-8\"; python \"scripts/lab4_task2.py\" 2>&1 | Select-Object -Last 80)",
+      "PowerShell($env:PYTHONIOENCODING=\"utf-8\"; python \"scripts/lab4_task3.py\" 2>&1 | Select-Object -Last 60)"
+    ]
+  }
+}
