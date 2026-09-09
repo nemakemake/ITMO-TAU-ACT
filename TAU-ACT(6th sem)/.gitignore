@@ -1,0 +1,74 @@
+# В git из каждой папки лабораторной (и курсовой) хранятся только два файла:
+# официальный файл задания и итоговый PDF с моей работой. Всё остальное —
+# рабочие материалы (скрипты, картинки, исходники Typst, черновики, справочные
+# PDF лекций, файлы, которыми ИИ расшифровывал/парсил данные, примеры чужих
+# работ) — остаётся только на диске и в git не попадает.
+
+# --- личные/локальные настройки редактора и Claude Code ---
+**/.claude/
+**/.vscode/
+
+# --- лабораторные и курсовой проект: оставляем только задание + мой PDF ---
+lab1/*
+!lab1/TAU1.pdf
+!lab1/TAU_LR1.pdf
+
+lab2/*
+!lab2/TAU2.pdf
+!lab2/TAU_LR2 (2).pdf
+
+lab3/*
+!lab3/TAU3.pdf
+!lab3/TAU_LR3.pdf
+
+lab4/*
+!lab4/TAU4.pdf
+!lab4/TAU_LR4.pdf
+
+labA/*
+!labA/TAUA.pdf
+!labA/TAU_LRA.pdf
+
+labB/*
+!labB/TAUB.pdf
+!labB/TAU_LRB.pdf
+
+labC/*
+!labC/TAUC.pdf
+!labC/TAU_LRC.pdf
+
+labD/*
+!labD/TAUD.pdf
+!labD/TAU_LRD.pdf
+
+course work/*
+!course work/TAU_CP.pdf
+!course work/TAUCP.pdf
+
+# --- типичные файлы, которыми ИИ расшифровывает/парсит исходные PDF ---
+extract_details.py
+extract_to_txt.py
+extract_pdfs.py
+list_files.py
+read_log.py
+search_all_pdfs.py
+search_lab2_pdf.py
+search_pdf.py
+search_workspace.py
+*.pdf.txt
+pdf_texts/
+pdf_details.txt
+pdf_search_results.txt
+all_pdf_search_results.txt
+lab2_details.txt
+search_results*.txt
+context*.txt
+parsed_lab.txt
+*_output.txt
+*_results.txt
+__pycache__/
+
+# --- примеры чужих работ и служебная документация ИИ ---
+examples/
+slop-docs/
+sources/

@@ -33,7 +33,22 @@
       "Bash(set PYTHONIOENCODING=utf-8)",
       "PowerShell($env:PYTHONIOENCODING=\"utf-8\"; python \"scripts/lab4_task1.py\" 2>&1 | Select-Object -Last 80)",
       "PowerShell($env:PYTHONIOENCODING=\"utf-8\"; python \"scripts/lab4_task2.py\" 2>&1 | Select-Object -Last 80)",
-      "PowerShell($env:PYTHONIOENCODING=\"utf-8\"; python \"scripts/lab4_task3.py\" 2>&1 | Select-Object -Last 60)"
+      "PowerShell($env:PYTHONIOENCODING=\"utf-8\"; python \"scripts/lab4_task3.py\" 2>&1 | Select-Object -Last 60)",
+      "Bash(python -c ' *)",
+      "Bash(typst --version)",
+      "Bash(pip install *)",
+      "Bash(python -c \"import fitz; print\\('ok', fitz.__doc__\\)\")",
+      "Bash(awk '/=== SLIDE 4[5-9] |=== SLIDE 5[0-9] /,0' lec_fd.txt)",
+      "Bash(mkdir -p labC/scripts labC/images)",
+      "Bash(python labC/scripts/task1_multichannel.py)",
+      "Bash(python -W ignore -c ' *)",
+      "Bash(python -W ignore labC/scripts/task2_tracking.py)",
+      "Bash(python labC/scripts/generate_scheme.py)",
+      "Bash(sed -i \"s/^group\\(ax, 0.5, 12.5, 17.4, 15.4, 'Генератор внешних воздействий'\\)$/group\\(ax, 0.5, 12.5, 17.9, 15.4, 'Генератор внешних воздействий'\\)/\" labC/scripts/generate_scheme.py)",
+      "Bash(ls \"/c/Users/Артем/AppData/Local/Programs/\" 2>/dev/null | head -20; echo \"---search---\"; find /c/Users/Артем -maxdepth 4 -iname \"typst*.exe\" 2>/dev/null | head -5; echo \"---cargo---\"; ls \"/c/Users/Артем/.cargo/bin/\" 2>/dev/null | head; echo \"---winget---\"; ls \"/c/Users/Артем/AppData/Local/Microsoft/WinGet/Links/\" 2>/dev/null | head -20)",
+      "Bash(cd \"C:/Users/Артем/.claude/projects/C--Users-------Documents-ITMO-TAU-ACT/memory\" && cat user_profile.md feedback_report_style.md project_tau_tooling.md)",
+      "Bash(python -c \"import numpy,scipy,control,matplotlib;print\\('ok',numpy.__version__,control.__version__\\)\")",
+      "Read(//c/Users/Артем/Documents/ITMO-TAU-ACT/**)"
     ]
   }
 }
