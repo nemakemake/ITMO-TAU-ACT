@@ -1,0 +1,31 @@
+name: Build course project PDF
+
+on:
+  push:
+    paths:
+      - "TAU-ACT(6th sem)/course work/**"
+      - ".github/workflows/build.yml"
+  pull_request:
+    paths:
+      - "TAU-ACT(6th sem)/course work/**"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Typst
+        uses: typst-community/setup-typst@v3
+
+      - name: Compile course project
+        working-directory: "TAU-ACT(6th sem)/course work"
+        run: typst compile main.typ main.pdf
+
+      - name: Upload compiled PDF
+        uses: actions/upload-artifact@v4
+        with:
+          name: course-work-pdf
+          path: "TAU-ACT(6th sem)/course work/main.pdf"
